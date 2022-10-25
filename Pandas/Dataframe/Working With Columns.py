@@ -1,8 +1,9 @@
-import numpy as np
 import pandas as pd
+import numpy as np
 
-df = pd.read_csv("Files/tips.csv")
+df = pd.read_csv("../../Files/tips.csv")
 print(df)
+
 
 print(df['total_bill'])
 
