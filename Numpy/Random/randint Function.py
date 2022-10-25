@@ -1,6 +1,6 @@
 import numpy as np
 
-print("numpy.random.randint function return random integer over.")
+print("numpy.random.randint function return random integers.")
 
-x = np.random.randint(2, 10)
+x = np.random.randint(2, 100, (3, 3))
 print(x)
