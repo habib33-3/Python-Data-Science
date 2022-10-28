@@ -1,0 +1,16 @@
+import pandas as pd
+
+df = pd.read_csv("../../Files/movie_scores.csv")
+print(df)
+print("dropna method")
+print(df.dropna())
+print()
+print("dropna method with axis parameter")
+print(df.dropna(axis=1))
+print()
+print("dropna method with thresh parameter")
+print(df.dropna(thresh=4))
+print(df.dropna(thresh=5))
+print()
+print("dropna method with subset parameter")
+print(df.dropna(subset="last_name"))
