@@ -9,9 +9,6 @@ two = pd.DataFrame(data_two)
 print(one)
 print(two)
 
-print(pd.concat([one, two], axis=1))
-print(pd.concat([one, two], axis=0))  # not encouraged
-
 two.columns = one.columns
 df = pd.concat([one, two], axis=0)
 df.index = range(len(df))
