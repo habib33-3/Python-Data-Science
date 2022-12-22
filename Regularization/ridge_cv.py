@@ -35,3 +35,6 @@ print(f"Prediction={test_prediction_cv_model}")
 print(f"Mean Absolute Error= {MAE}")
 print(f"Mean Squared Error= {MSE}")
 print(f"Root Mean Squared Error= {RMSE}")
+
+ridge_cv_coefficients = ridge_cv_model.coef_
+print(f"Coefficients={ridge_cv_coefficients}")

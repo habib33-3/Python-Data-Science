@@ -38,3 +38,6 @@ RMSE = np.sqrt(MSE)
 print(f"Mean Absolute Error= {MAE}")
 print(f"Mean Squared Error= {MSE}")
 print(f"Root Mean Squared Error= {RMSE}")
+
+lasso_coefficients = lasso_cv_model.coef_
+print(f"Coefficients={lasso_coefficients}")
