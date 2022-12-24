@@ -1,11 +1,9 @@
 import pandas as pd
-from sklearn.linear_model import Ridge
-from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import ElasticNet
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import mean_squared_error
-from sklearn.linear_model import ElasticNet
-from sklearn.model_selection import GridSearchCV
 
 df = pd.read_csv("../Files/Advertising.csv")
 print(df.head())
